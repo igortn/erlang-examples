@@ -1,6 +1,8 @@
 -module(number_registry).
 
-%% Number registry server. lookup, insert and a number store are not implemented.
+%% Number registry server with a synchronous protocol.
+%% The server pid is registered under a name and hidden from a client.
+%% lookup, insert and a number store are not implemented.
 
 %% API
 -export([start/0, server/1]).
